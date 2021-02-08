@@ -1,0 +1,20 @@
+
+<!Doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio de Sesión </title>
+
+</head>
+<body class="bg-dark">
+    <h2>Iniciar sesión</h2>
+
+    <form method="POST">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit">Login</button>
+    </form>
+   
+</body>
+</html>
